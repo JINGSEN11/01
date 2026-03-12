@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+   <div style="
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(62, 62, 71);
+    ">
+    <img src="img/111.jpg" alt="陀飞轮" width="300" height="200">
+    .blue{
+        color: blue;
+    }
+   
+</div>
+<div style="text-align: center;
+padding: 40px;
+font-size:larger ;
+background-color: azure;
+"> 
+    <h1>陀飞轮</h1>
+    <p>曾付出 几多心跳</p>
+    <p>来换取一堆堆的发票</p>
+    <p>秒数 捉的紧了</p>
+    <p>人值得 命中减少几秒</p>
+    <p>多买一只表</p>
+    <p>而皮肤竟偷偷松了</p>
+    <p>何时用到尽了</p>
+    <p>直至哪样紧要</p>
+</div>
+<div style="
+font-size: smaller;
+text-align: center;
+color: gray;
+background-color: rgb(62, 62, 71);
+padding: 40px">
+    <p>Signed by Jingsen</p>
+</div>
