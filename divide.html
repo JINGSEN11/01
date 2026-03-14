@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex布局</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;/* 视口高度 */
+            background-color: #eee;/* 给body加上背景 */
+        }
+       /* *{
+            border: 1px solid black;/* 编写阶段,给所有分块加上一个边框,方便查看布局 */
+        .shadow{
+            -webkit-box-shadow:10px 10px 5px 0px rgba(203,204,212,0.67);
+            -moz-box-shadow:10px 10px 5px 0px rgba(203,204,212,0.67);
+            box-shadow:10px 10px 5px 0px rgba(203,204,212,0.67);
+        } 
+        .flex{
+            display: flex;
+        }
+        .white{
+            background-color: white;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mg8t{
+            margin-top: 8px;
+        }
+        .mg8r{
+            margin-right: 8px;
+        }
+        .mg8b{
+            margin-bottom: 8px;
+        }
+            @media (max-width:600px){/* 媒体查询 */
+                .delcebian{
+                    display: none;
+                }
+                .neirong{
+                    flex-direction: column;
+                }
+                .shuju{
+                    flex-direction: column;
+                }
+            }
+    </style>
+</head>
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div class="white mg8r shadow delcebian" style="width: 100px;z-index: 2;"></div>
+    <!-- 主页 -->
+    <div class="flex1 flex column" >
+        <!-- 顶栏 -->
+        <div style="height: 100px;z-index: 1;" class="white mg8b shadow"><p></p></div>
+        <!-- 内容区 -->
+        <div style="overflow: auto;" class="flex1 flex neirong">
+            <!-- 大区 -->
+            <div style="flex: 3;" class="flex column mg8t mg8r">
+                <!-- 数据块 -->
+                <div class="flex">
+                    <div style="height: 100px;" class="flex1 white mg8b mg8r shadow"></div>
+                    <div style="height: 100px;" class="flex1 white mg8b mg8r shadow"></div>
+                    <div style="height: 100px;" class="flex1 white mg8b mg8r shadow"></div>
+                    <div style="height: 100px;" class="flex1 white mg8b shadow"></div>
+                </div>
+                <!-- 大型内容 -->
+                <div class="flex column">
+                    <div style="height: 200px;" class="white shadow"></div>
+                    <div style="height: 200px;" class="white mg8t shadow"></div>
+                    <div style="height: 200px;" class="white mg8t shadow"></div>
+                    <div style="height: 200px;" class="white mg8t shadow"></div>
+                    <div style="height: 200px;" class="white mg8t shadow"></div>
+                    <div style="height: 200px;" class="white mg8t shadow"></div>
+                    <div style="height: 200px;" class="white mg8t shadow"></div>
+                    <div style="height: 200px;" class="white mg8t shadow"></div>
+                </div>
+            </div>
+            <!-- 推荐 -->
+            <div style="flex: 1;" class="flex column">
+                <!-- 内容1 -->
+                <div style="height: 200px;" class="white mg8t mg8r shadow"></div>
+                <!-- 内容2 -->
+                <div style="height: 200px;" class="white mg8t mg8r shadow"></div>
+                <!-- .... -->
+                <div style="height: 200px;" class="white mg8t mg8r shadow"></div>
+                <div style="height: 200px;" class="white mg8t mg8r shadow"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
